@@ -6,6 +6,10 @@ As typical when a security incident is reported, it is very common the security 
 
 This may provide clues on where to look if the original package can be obtained.
 
+Please do not harass individual contributors in the analysis.  First, they are not likely the perpetrators as the code commits were excised per the AWS bulletin.  Second, even if one of them was, they may have had an account takeover or their creds hijacked.
+
+Below is claudes analysis of the output.
+--------------------
 🔍 GIT HISTORY TAMPERING FORENSIC ANALYSIS
 DEFINITIVE FORENSIC EVIDENCE
 1. Impossible Timestamp Anomalies (SMOKING GUN) 🚨

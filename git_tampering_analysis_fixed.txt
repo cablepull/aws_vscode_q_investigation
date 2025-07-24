@@ -1,0 +1,240 @@
+=== FIXED GIT HISTORY TAMPERING ANALYSIS ===
+Repository: aws-toolkit-vscode
+Analysis Date: 2025-07-24 11:56:54
+Incident Period: 2024-07-13 to 2024-07-19
+
+
+=====================================================
+1. CRITICAL TIMESTAMP ANALYSIS
+=====================================================
+
+🔍 DETAILED TIMESTAMP ANOMALY INVESTIGATION:
+Legend: Negative = Author time before Commit time (backdating)
+        Positive = Author time after Commit time (forward dating)
+
+⚠️  6efd9126: -16 hours (Justin M. Keyes) - refactor(regionProvider): use globalState abstraction
+⚠️  0097c6ff: -16 hours (Justin M. Keyes) - refactor(schemas): use globalState abstraction
+⚠️  5d58fcaa: -16 hours (Justin M. Keyes) - refactor(codecatalyst): use globalState abstraction
+⚠️  f6a02aef: -17 hours (Justin M. Keyes) - refactor(codewhisperer): use globalState abstraction
+⚠️  f9ef1311: -39 hours (Justin M. Keyes) - refactor(telemetry): use globalState abstraction
+⚠️  6ea5e270: -40 hours (Justin M. Keyes) - refactor(core): use globalState abstraction
+⚠️  9cdb8c43: -22 hours (Justin M. Keyes) - refactor(core): use globalState abstraction
+⚠️  bd54d5b8: -7 hours (Justin M. Keyes) - fix(globalState): log update() errors
+⚠️  8c7ec00b: -118 hours (Justin M. Keyes) - refactor(codewhisperer): use globalState abstraction
+⚠️  9891c8c6: -118 hours (Justin M. Keyes) - refactor(stepFunctions): use globalState abstraction
+⚠️  7eff077f: -118 hours (Justin M. Keyes) - refactor(activationReloadState): use globalState abstraction
+
+
+=====================================================
+2. AUTHOR VS COMMITTER MISMATCH ANALYSIS
+=====================================================
+
+🔍 COMMITS WHERE AUTHOR ≠ COMMITTER:
+
+⚠️  fb641cd5: Author=aws-toolkit-automation <43144436+aws-toolkit-automation@users.noreply.github.com>, Committer=GitHub <noreply@github.com>
+    Subject: Merge staging into feature/lambda-get-started
+
+⚠️  b5e305e7: Author=Justin M. Keyes <jmkeyes@amazon.com>, Committer=GitHub <noreply@github.com>
+    Subject: Merge #5344 refactor: use globalState abstraction
+
+⚠️  2ea7ad34: Author=aws-toolkit-automation <43144436+aws-toolkit-automation@users.noreply.github.com>, Committer=GitHub <noreply@github.com>
+    Subject: Merge staging into feature/lambda-get-started
+
+⚠️  aa586980: Author=Justin M. Keyes <jmkeyes@amazon.com>, Committer=GitHub <noreply@github.com>
+    Subject: refactor(stepFunctions): use globalState abstraction #5323
+
+⚠️  c3c5f6eb: Author=aws-toolkit-automation <43144436+aws-toolkit-automation@users.noreply.github.com>, Committer=GitHub <noreply@github.com>
+    Subject: Merge staging into feature/lambda-get-started
+
+⚠️  42232716: Author=aws-toolkit-automation <43144436+aws-toolkit-automation@users.noreply.github.com>, Committer=GitHub <noreply@github.com>
+    Subject: Merge staging into feature/lambda-get-started
+
+⚠️  bc9268a7: Author=Laxman Reddy <141967714+laileni-aws@users.noreply.github.com>, Committer=GitHub <noreply@github.com>
+    Subject: Increasing debouce time (#5343)
+
+⚠️  e977aca0: Author=aws-toolkit-automation <43144436+aws-toolkit-automation@users.noreply.github.com>, Committer=GitHub <noreply@github.com>
+    Subject: Merge staging into feature/lambda-get-started
+
+⚠️  92361e74: Author=aws-toolkit-automation <43144436+aws-toolkit-automation@users.noreply.github.com>, Committer=GitHub <noreply@github.com>
+    Subject: Merge staging into feature/lambda-get-started
+
+⚠️  6273aada: Author=Nikolas Komonen <118216176+nkomonen-amazon@users.noreply.github.com>, Committer=GitHub <noreply@github.com>
+    Subject: auth: add telemetry for why the user needed to reauth (#5243)
+
+⚠️  c4aa9f5c: Author=aws-toolkit-automation <43144436+aws-toolkit-automation@users.noreply.github.com>, Committer=GitHub <noreply@github.com>
+    Subject: Merge staging into feature/lambda-get-started
+
+⚠️  72b4222f: Author=sec-oops <7629684+sec-oops@users.noreply.github.com>, Committer=GitHub <noreply@github.com>
+    Subject: fix(ThreatComposer): typo #5337
+
+⚠️  2e1698b0: Author=aws-toolkit-automation <43144436+aws-toolkit-automation@users.noreply.github.com>, Committer=GitHub <noreply@github.com>
+    Subject: Merge staging into feature/lambda-get-started
+
+⚠️  8ee388ba: Author=Nikolas Komonen <118216176+nkomonen-amazon@users.noreply.github.com>, Committer=GitHub <noreply@github.com>
+    Subject: fix: EPERM error during SSO token refresh (#5335)
+
+⚠️  fbed3d85: Author=aws-toolkit-automation <43144436+aws-toolkit-automation@users.noreply.github.com>, Committer=GitHub <noreply@github.com>
+    Subject: Merge staging into feature/lambda-get-started
+
+⚠️  d58f5fef: Author=Nikolas Komonen <118216176+nkomonen-amazon@users.noreply.github.com>, Committer=GitHub <noreply@github.com>
+    Subject: fix: scrubNames() handle file exts better (#5332)
+
+⚠️  018eb8f0: Author=aws-toolkit-automation <43144436+aws-toolkit-automation@users.noreply.github.com>, Committer=GitHub <noreply@github.com>
+    Subject: Merge staging into feature/lambda-get-started
+
+⚠️  66f55b13: Author=Justin M. Keyes <jmkeyes@amazon.com>, Committer=GitHub <noreply@github.com>
+    Subject: refactor(amazonq): move chat activation into packages/amazonq/ #5333
+
+⚠️  3c1d155d: Author=aws-toolkit-automation <43144436+aws-toolkit-automation@users.noreply.github.com>, Committer=GitHub <noreply@github.com>
+    Subject: Merge staging into feature/lambda-get-started
+
+⚠️  6dbff72d: Author=Josh Pinkney <103940141+jpinkney-aws@users.noreply.github.com>, Committer=GitHub <noreply@github.com>
+    Subject: fix: Code coverage report for amazon q (#5322)
+
+⚠️  82ee3486: Author=aws-toolkit-automation <43144436+aws-toolkit-automation@users.noreply.github.com>, Committer=GitHub <noreply@github.com>
+    Subject: Merge staging into feature/lambda-get-started
+
+⚠️  479c037b: Author=Justin M. Keyes <jmkeyes@amazon.com>, Committer=GitHub <noreply@github.com>
+    Subject: Merge #5309 globalState abstraction
+
+⚠️  53ad6e98: Author=aws-toolkit-automation <43144436+aws-toolkit-automation@users.noreply.github.com>, Committer=GitHub <noreply@github.com>
+    Subject: Merge staging into feature/lambda-get-started
+
+⚠️  f337d01b: Author=Lei Gao <97199248+leigaol@users.noreply.github.com>, Committer=GitHub <noreply@github.com>
+    Subject: deps: upgrade codewhisperer-streaming client #5328
+
+⚠️  efb75184: Author=aws-toolkit-automation <43144436+aws-toolkit-automation@users.noreply.github.com>, Committer=GitHub <noreply@github.com>
+    Subject: Merge staging into feature/lambda-get-started
+
+⚠️  366e44ae: Author=David <60020664+dhasani23@users.noreply.github.com>, Committer=GitHub <noreply@github.com>
+    Subject: fix(amazonq): always show latest build logs #5316
+
+⚠️  3f430e04: Author=aws-toolkit-automation <43144436+aws-toolkit-automation@users.noreply.github.com>, Committer=GitHub <noreply@github.com>
+    Subject: Merge staging into feature/lambda-get-started
+
+⚠️  e4c21dca: Author=wilson <wlsun@amazon.com>, Committer=GitHub <noreply@github.com>
+    Subject: telemetry(feature dev): amazonq_bundleExtensionIgnored #5296
+
+⚠️  1f72a12d: Author=aws-toolkit-automation <43144436+aws-toolkit-automation@users.noreply.github.com>, Committer=GitHub <noreply@github.com>
+    Subject: Merge staging into feature/lambda-get-started
+
+⚠️  f1a28e1e: Author=Justin M. Keyes <jmkeyes@amazon.com>, Committer=GitHub <noreply@github.com>
+    Subject: telemetry: upstream metrics to aws-toolkit-common #5313
+
+⚠️  c622df08: Author=aws-toolkit-automation <43144436+aws-toolkit-automation@users.noreply.github.com>, Committer=GitHub <noreply@github.com>
+    Subject: Merge staging into feature/lambda-get-started
+
+⚠️  469fa91e: Author=Thiago Verney <thiago.verney@gmail.com>, Committer=GitHub <noreply@github.com>
+    Subject: refactor(amazonqFeatureDev): include exceptions treated in code generation statu
+
+⚠️  d6eca3a0: Author=aws-toolkit-automation <43144436+aws-toolkit-automation@users.noreply.github.com>, Committer=GitHub <noreply@github.com>
+    Subject: Merge staging into feature/lambda-get-started
+
+⚠️  63060b3c: Author=Maxim Hayes <149123719+hayemaxi@users.noreply.github.com>, Committer=GitHub <noreply@github.com>
+    Subject: fix: remove duplicate command entry (#5301)
+
+⚠️  f851a985: Author=aws-toolkit-automation <43144436+aws-toolkit-automation@users.noreply.github.com>, Committer=GitHub <noreply@github.com>
+    Subject: Merge staging into feature/lambda-get-started
+
+⚠️  67b9a35d: Author=aws-toolkit-automation <43144436+aws-toolkit-automation@users.noreply.github.com>, Committer=GitHub <noreply@github.com>
+    Subject: Merge staging into feature/lambda-get-started
+
+⚠️  1bec3c3e: Author=andrewyuq <89420755+andrewyuq@users.noreply.github.com>, Committer=GitHub <noreply@github.com>
+    Subject: Amazon Q: multiple issues fixes (#5306)
+
+⚠️  b30cdbb0: Author=aws-toolkit-automation <43144436+aws-toolkit-automation@users.noreply.github.com>, Committer=GitHub <noreply@github.com>
+    Subject: Merge staging into feature/lambda-get-started
+
+⚠️  cb2b3962: Author=Lei Gao <97199248+leigaol@users.noreply.github.com>, Committer=GitHub <noreply@github.com>
+    Subject: update LSP version to 0.1.3 (#5320)
+
+⚠️  386cb1d8: Author=aws-toolkit-automation <43144436+aws-toolkit-automation@users.noreply.github.com>, Committer=GitHub <noreply@github.com>
+    Subject: Merge staging into feature/lambda-get-started
+
+⚠️  706a3a10: Author=Nikolas Komonen <118216176+nkomonen-amazon@users.noreply.github.com>, Committer=GitHub <noreply@github.com>
+    Subject: Timeout error (#5289)
+
+
+=====================================================
+3. GPG SIGNATURE ANALYSIS
+=====================================================
+
+ℹ️  GPG signatures not configured for this repository
+   (This is normal - most repositories don't use GPG signing)
+
+
+=====================================================
+4. COMMIT TIMING PATTERNS
+=====================================================
+
+🔍 COMMITS BY HOUR OF DAY (during incident period):
+
+
+
+=====================================================
+5. EMERGENCY RESPONSE PATTERN ANALYSIS
+=====================================================
+
+🔍 COMMITS WITH EMERGENCY/CLEANUP KEYWORDS:
+
+72b4222f 2024-07-18 06:17:39 -0700: fix(ThreatComposer): typo #5337
+8ee388ba 2024-07-17 17:18:38 -0400: fix: EPERM error during SSO token refresh (#5335)
+d58f5fef 2024-07-17 19:57:59 +0000: fix: scrubNames() handle file exts better (#5332)
+6dbff72d 2024-07-17 12:07:59 -0400: fix: Code coverage report for amazon q (#5322)
+366e44ae 2024-07-17 04:39:24 -0700: fix(amazonq): always show latest build logs #5316
+bd54d5b8 2024-07-16 15:29:30 -0700: fix(globalState): log update() errors
+63060b3c 2024-07-15 13:49:16 -0700: fix: remove duplicate command entry (#5301)
+1bec3c3e 2024-07-15 11:55:01 -0700: Amazon Q: multiple issues fixes (#5306)
+
+=====================================================
+6. SUSPICIOUS FILE MODIFICATION PATTERNS
+=====================================================
+
+🔍 FILES MODIFIED MOST FREQUENTLY:
+
+⚠️  packages/core/src/shared/globalState.ts: modified 10 times
+⚠️  package-lock.json: modified 7 times
+⚠️  packages/amazonq/package.json: modified 5 times
+   packages/core/src/codewhisperer/models/model.ts: modified 3 times
+   packages/toolkit/package.json: modified 2 times
+   packages/toolkit/.changes/next-release/Bug Fix-19be4c1e-355d-428e-bc8a-b8aa3cc64b7a.json: modified 2 times
+   packages/core/src/test/stepFunctions/utils.test.ts: modified 2 times
+   packages/core/src/test/stepFunctions/commands/visualizeStateMachine.test.ts: modified 2 times
+   packages/core/src/test/codewhisperer/commands/basicCommands.test.ts: modified 2 times
+   packages/core/src/stepFunctions/utils.ts: modified 2 times
+   packages/core/src/stepFunctions/commands/visualizeStateMachine/aslVisualizationManager.ts: modified 2 times
+   packages/core/src/stepFunctions/commands/visualizeStateMachine/aslVisualizationCDKManager.ts: modified 2 times
+   packages/core/src/stepFunctions/commands/visualizeStateMachine/abstractAslVisualizationManager.ts: modified 2 times
+   packages/core/src/shared/utilities/cacheUtils.ts: modified 2 times
+   packages/core/src/shared/filesystemUtilities.ts: modified 2 times
+   packages/core/src/shared/errors.ts: modified 2 times
+   packages/core/src/codewhisperer/views/lineAnnotationController.ts: modified 2 times
+   packages/core/src/codewhisperer/util/customizationUtil.ts: modified 2 times
+   packages/core/src/codewhisperer/models/constants.ts: modified 2 times
+   packages/core/src/codewhisperer/index.ts: modified 2 times
+
+
+=====================================================
+7. STATISTICAL EVIDENCE SUMMARY
+=====================================================
+
+📊 KEY STATISTICS:
+==================
+Total commits in incident period: 59
+Baseline commits (30 days prior): 280
+Timestamp anomalies (>1hr diff): 11
+Author≠Committer mismatches: 41
+Emergency-style commits: 1
+
+❌ SUSPICIOUS: 11 timestamp anomalies (>5)
+❌ SUSPICIOUS: 41 author/committer mismatches (>50%)
+✅ NORMAL: 1 emergency commits
+✅ NORMAL: Repository integrity clean
+
+🎯 FINAL ASSESSMENT:
+===================
+SUSPICION SCORE: 2/4
+⚠️  MODERATE SUSPICION OF TAMPERING
+   Some indicators warrant further investigation
+
+=== END OF FIXED ANALYSIS ===

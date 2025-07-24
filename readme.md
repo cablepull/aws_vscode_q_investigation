@@ -1,4 +1,6 @@
 Analysis performed by Mehmet Yilmaz (aka cablepull) with AI assistance
+On: https://github.com/aws/aws-toolkit-vscode/
+Relates to: https://www.404media.co/hacker-plants-computer-wiping-commands-in-amazons-ai-coding-agent/
 
 As typical when a security incident is reported, it is very common the security incident gets excised from public history.  While I was unable to unearth the original code, I was able to show git was rewritten.
 
